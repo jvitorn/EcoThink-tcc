@@ -1,0 +1,23 @@
+{
+  "name": "ecothink-tcc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jvitorn/EcoThink-tcc.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jvitorn/EcoThink-tcc/issues"
+  },
+  "homepage": "https://github.com/jvitorn/EcoThink-tcc#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
