@@ -12,19 +12,22 @@ const server = require('http').createServer(app);
 //definindo os arquivos da aplicação
 app.use(express.static(path.join(__dirname,'src/public')));
 //definindo onde estara as views
-app.set('views',path.join(__dirname,'src/public'));
+app.set('views',path.join(__dirname,'src/views'));
 //renderizando para html
 app.engine('html',require('ejs').renderFile);
 //definindo a view 
 app.set('view engine','html');
+//encode
+app.use(express.urlencoded());
+
 
 //-----------------------------------------------------------------------------------------------------------------------------------------------
 //quando entrar na rota padrao sera iniciado o 'index.html'
-app.use('/',(req,res)=>{
+app.get('/',(req,res)=>{
     res.render('index.html');
 });
 //quando entrar na rota padrao sera iniciado o 'cadastro.html'
-app.use('/cadastro',(req,res)=>{
+app.get('/cadastro',(req,res)=>{
     res.render('cadastro.html');
 });
 
