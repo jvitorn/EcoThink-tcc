@@ -34,7 +34,7 @@ app.post('/registrar',(req,res)=>{
     let email = req.body.email;
     let senha = req.body.password;
     let confirm = req.body.confirm;
-    if(senha === confirm){
+    if(senha == confirm){
         console.log('senhas corretas');
     }else{
         console.log('senhas incorretas');
