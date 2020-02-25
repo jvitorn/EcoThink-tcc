@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start":"live-server"
   },
   "repository": {
     "type": "git",
@@ -18,6 +18,7 @@
   "homepage": "https://github.com/jvitorn/EcoThink-tcc#readme",
   "dependencies": {
     "ejs": "^3.0.1",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "live-server": "^1.2.1"
   }
 }

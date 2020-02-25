@@ -3,3 +3,21 @@
     text-align: center;
 
 }
+.fa-google-plus:hover{
+    color:red;
+}
+.fa-twitter:hover{
+    color:cyan;
+}
+.fa-facebook:hover{
+    color:blue;
+}
+.cadastro{
+    font-weight: 400;
+}
+.login{
+    font-weight: 250;
+}
+.arredondar{
+    border-radius: 1rem !important;
+}

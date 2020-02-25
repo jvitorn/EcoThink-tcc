@@ -30,7 +30,17 @@ app.get('/',(req,res)=>{
 app.get('/cadastro',(req,res)=>{
     res.render('cadastro.html');
 });
-
+app.post('/registrar',(req,res)=>{
+    let email = req.body.email;
+    let senha = req.body.password;
+    let confirm = req.body.confirm;
+    if(senha === confirm){
+        console.log('senhas corretas');
+    }else{
+        console.log('senhas incorretas');
+    }
+});
+//Servidor 
 app.listen(port,function(){
     console.log('Server is running at http://localhost:'+ port);
 });
