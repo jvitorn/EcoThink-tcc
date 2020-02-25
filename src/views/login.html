@@ -9,19 +9,11 @@
     <link rel="stylesheet" href="css/cadastro.css">
      <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/3732f07a5a.js" crossorigin="anonymous"></script>
-    <!-- cdn angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
-    <script src="js/angular.js"></script>
 </head>
-<style>
-input.ng-valid {
-    background-color:lightgreen;
-}
-</style>
 <body class="bg-success text-white">
     <div class="container-fluid">
         <div class="row">
-            <!-- conteudo do cadastro -->
+            <!-- conteudo do login -->
             <div class="col-sm-8 mx-auto cadastro p-4">
                 <!-- Logo -->
                 <div class="row">
@@ -33,36 +25,31 @@ input.ng-valid {
                 <div class="row">
                     <div class="col-12 titulo-cadastro">
                         <div class="text-group text-center ">
-                            <h3 class="display-4 ">Registrar</h3>
-                            <p class="lead">Registre-se em nosso site !</p>
+                            <h3 class="display-4 ">Login</h3>
+                            <p class="lead">Entre em nosso site !</p>
                         </div>
                     </div>
                 </div>
                 <!-- formularios -->
                 <div class="row">
                     <div class="col-12 col-sm-12 p-4 mt-2 text-dark shadow bg-white arredondar">
-                        <form action="/registrar" method="post" name="cadastro">
+                        <form action="/entrar" method="post">
                         <!-- form -->
                         <div class="row">
-                            <div class="col-12 form-cadastro">
+                            <div class="col-12 form-login">
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="text" name="email" ng-model="inputEmail" class="form-control form-control-lg border-success"  placeholder="Digite seu email">
+                                    <input type="text" name="email" class="form-control form-control-lg border-success"  placeholder="Digite seu email">
                                 </div>
                                 <div class="form-group">
                                     <label>Senha</label>
                                     <input type="password" name="password" class="form-control form-control-lg border-success"  placeholder="Digite sua senha">
                                 </div>
-                                <div class="form-group">
-                                    <label>Senha</label>
-                                    <input type="password" name="confirm" class="form-control form-control-lg border-success"  placeholder="Digite sua senha novamente">
-                                    <a href="password.html" class="text-success">Forgot My Password</a>
-                                </div>
                             </div>
                         </div>
                         <!-- buttom -->
                         <div class="row">
-                            <div class="col-12 botao-cadastro ">
+                            <div class="col-12 botao-login ">
                             <input class="btn btn-block mx-auto shadow bg-info p-3 mt-3 mb-4 border-rounded text-white" type="submit" value="Sign Up"></>
                             </div>
                         </div>
