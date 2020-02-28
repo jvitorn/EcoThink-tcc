@@ -2,13 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Bem Vindo ao EcoThink</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+     <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3732f07a5a.js" crossorigin="anonymous"></script>
+    <!-- cdn angular -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
+    <script src="js/angular.js"></script>
+    <!-- cdn animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+    .arredondar{
+        border-radius: 1rem !important;
+    }
+    </style>
 </head>
-<body>
-    <h1>Ola Mundo</h1>
-    <a href="http://localhost:3000/cadastro">cadastre-se</a>
-    <a href="http://3000-b4538b50-27a8-48cc-a4a9-517b4b791bf3.ws-us02.gitpod.io/cadastro">cadastre(link funcionando web)</a>
+<body class="bg-success">
+    <div class="container">     
+        <!-- texto -->
+        <div class="row">
+            <div class="col-12 p-5 text-center text-white animated  bounceInLeft delay-1s slow ">
+                <h2 class="display-2">Bem Vindo</h2>
+                <p class="lead">Seu site para Eventos de uma maneira simplificada , participe e socialize, seja integrante nos eventos de sua cidade e chame seus amigos ! </p>
+            </div>
+             <!-- Logo -->
+            <div class="col-6 offset-3 col-sm-3 offset-sm-6  col-md-3 offset-md-5 animated zoomIn delay-2s slow ">
+                <img src="imgs/logo.png" alt="Logo EcoThink" class="img-fluid d-block logo">
+            </div>
+        </div>
+         <!-- buttom -->
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-6   animated  bounceInRight delay-2s slow ">
+                <a class="btn btn-block  text-white mx-auto shadow  arredondar p-3 mt-3 mb-4" href="/login">Logar</a>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6   animated  bounceInRight delay-2s slow ">
+                <a class="btn btn-block bg-white text-success mx-auto shadow  arredondar p-3 mt-3 mb-4" href="/cadastro">Registrar</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
