@@ -36,13 +36,26 @@ app.get('/login',(req,res)=>{
 app.get('/perfil',(req,res)=>{
     res.render('perfil.html');
 });
+app.get('/home',(req,res)=>{
+    res.render('home.html');
+});
 app.post('/registrar',(req,res)=>{
     let email = req.body.email;
     let senha = req.body.password;
     let confirm = req.body.confirm;
    console.log(req.body);
 });
+app.post('/entrar',(req,res)=>{
+    let email = res.body.email;
+    let senha = res.body.password;
 
+    if(email == 'joao.carvalho@gmail.com'&&senha == '123'){
+        res.render('home.html');
+    }else{
+        res.write("Dados Errados");
+    }
+
+});
 //Servidor 
 app.listen(port,function(){
     console.log('Server is running at http://localhost:'+ port);
