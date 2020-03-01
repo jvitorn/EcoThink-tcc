@@ -1,0 +1,49 @@
+
+.fas{
+    font-size: 20px;
+    padding: 0.5rem;
+    color:#B31B28;
+}
+.fixed-bottom{
+    border: 1px solid #e9ecef;
+}
+.fixed-bottom .fas,.far {
+    font-size: 20px!important;
+    padding: 0.5rem!important;
+    color:#7cd956!important;
+    text-align: center;
+    
+}
+
+.fa-map-marker-alt{
+    padding: 0.25rem;
+    color:#B31B28;
+}
+.img-profile{
+    width: auto;
+    height: 130px;
+}
+.painel-legenda{
+    border: 1px solid #e9ecef;
+    padding: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+.painel-legenda:hover {
+    border: 1px solid lightgreen;
+    background-color:#d1d4d8!important;
+}
+.painel-legenda p:hover{
+    color:#B31B28;
+    font-weight: 500!important;
+}
+.logout{
+    background-color:#e9ecef!important;
+}
+.painel-legenda p{
+    line-height: 1.2;
+    font-weight: 475!important;
+    margin-top: 0.5rem;
+    margin-left: 0.75rem;
+    color:black;
+   
+}

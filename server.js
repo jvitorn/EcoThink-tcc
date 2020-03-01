@@ -33,6 +33,9 @@ app.get('/cadastro',(req,res)=>{
 app.get('/login',(req,res)=>{
     res.render('login.html');
 });
+app.get('/perfil',(req,res)=>{
+    res.render('perfil.html');
+});
 app.post('/registrar',(req,res)=>{
     let email = req.body.email;
     let senha = req.body.password;
