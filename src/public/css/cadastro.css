@@ -3,13 +3,13 @@
     text-align: center;
 
 }
-.fa-google-plus:hover{
+.fa-google-plus{
     color:red;
 }
-.fa-twitter:hover{
+.fa-twitter{
     color:cyan;
 }
-.fa-facebook:hover{
+.fa-facebook{
     color:blue;
 }
 .cadastro{

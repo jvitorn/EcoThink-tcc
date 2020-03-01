@@ -1,0 +1,15 @@
+.fas{
+    font-size: 20px;
+    padding: 0.5rem;
+    color:#B31B28;
+}
+.fixed-bottom{
+    border: 1px solid #e9ecef;
+}
+.fixed-bottom .fas,.far {
+    font-size: 20px!important;
+    padding: 0.5rem!important;
+    color:#7cd956!important;
+    text-align: center;
+    
+}

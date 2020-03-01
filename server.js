@@ -8,7 +8,8 @@ const path = require('path');
 const app = express();
 //criando protocolo wss
 const server = require('http').createServer(app);
-
+//capturando usuarios
+const users = [];
 //definindo os arquivos da aplicação
 app.use(express.static(path.join(__dirname,'src/public')));
 //definindo onde estara as views
@@ -46,13 +47,12 @@ app.post('/registrar',(req,res)=>{
    console.log(req.body);
 });
 app.post('/entrar',(req,res)=>{
-    let email = res.body.email;
-    let senha = res.body.password;
-
-    if(email == 'joao.carvalho@gmail.com'&&senha == '123'){
-        res.render('home.html');
+    let email = req.body.email;
+    let senha = req.body.password;
+    if(email == "joao.carvalho@gmail.com" && senha == "123"){
+        res.render("perfil.html");
     }else{
-        res.write("Dados Errados");
+        res.render("login.html");
     }
 
 });

@@ -12,6 +12,9 @@
     <!-- cdn angular -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
     <script src="js/angular.js"></script>
+     <!-- cdn animate -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
 </head>
 <style>
 input.ng-valid {
@@ -25,13 +28,13 @@ input.ng-valid {
             <div class="col-sm-8 mx-auto cadastro p-4">
                 <!-- Logo -->
                 <div class="row">
-                    <div class="col-6 offset-3 col-sm-3 offset-sm-5 col-md-4 offset-md-4">
+                    <div class="col-6 offset-3 col-sm-3 offset-sm-5 col-md-4 offset-md-4 animated zoomIn delay-1s fast">
                         <img src="imgs/logo.png" alt="Logo EcoThink" class="img-fluid d-block logo">
                     </div>
                 </div>
                 <!-- titulo -->
-                <div class="row">
-                    <div class="col-12 titulo-cadastro">
+                <div class="row ">
+                    <div class="col-12 titulo-cadastro bounceIn delay-1s fast">
                         <div class="text-group text-center ">
                             <h3 class="display-4 ">Registrar</h3>
                             <p class="lead">Registre-se em nosso site !</p>
@@ -39,7 +42,7 @@ input.ng-valid {
                     </div>
                 </div>
                 <!-- formularios -->
-                <div class="row">
+                <div class="row bounceIn delay-1s slow">
                     <div class="col-12 col-sm-12 p-4 mt-2 text-dark shadow bg-white arredondar">
                         <form action="/registrar" method="post" name="cadastro">
                         <!-- form -->
@@ -47,23 +50,23 @@ input.ng-valid {
                             <div class="col-12 form-cadastro">
                                 <div class="form-group">
                                     <label>Email</label>
-                                    <input type="text" name="email" ng-model="inputEmail" class="form-control form-control-lg border-success"  placeholder="Digite seu email">
+                                    <input type="text" name="email" ng-model="inputEmail" class="form-control form-control-md border-success"  placeholder="Digite seu email">
                                 </div>
                                 <div class="form-group">
                                     <label>Senha</label>
-                                    <input type="password" name="password" class="form-control form-control-lg border-success"  placeholder="Digite sua senha">
+                                    <input type="password" name="password" class="form-control form-control-md border-success"  placeholder="Digite sua senha">
                                 </div>
                                 <div class="form-group">
                                     <label>Senha</label>
-                                    <input type="password" name="confirm" class="form-control form-control-lg border-success"  placeholder="Digite sua senha novamente">
-                                    <a href="password.html" class="text-success">Forgot My Password</a>
+                                    <input type="password" name="confirm" class="form-control form-control-md border-success"  placeholder="Digite sua senha novamente">
+                                    <a href="/" class="text-success">Voltar ao inicio</a>
                                 </div>
                             </div>
                         </div>
                         <!-- buttom -->
                         <div class="row">
                             <div class="col-12 botao-cadastro ">
-                            <input class="btn btn-block mx-auto shadow bg-info p-3 mt-3 mb-4 border-rounded text-white" type="submit" value="Sign Up"></>
+                            <input class="btn btn-block mx-auto shadow bg-info p-3 mt-3 mb-4 border-rounded text-white" type="submit" value="Cadastrar"></>
                             </div>
                         </div>
                         </form>
@@ -71,7 +74,7 @@ input.ng-valid {
                         <div class="row">
                             <div class="col-sm-12 login-social">
                                 <div class="text-group text-center text-info">
-                                    <p class="lead">Login With</p>
+                                    <p class="lead">Login Com</p>
                                     <hr class="my-3">
                                 </div>
                             </div>
