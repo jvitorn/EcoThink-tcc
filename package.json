@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "run":"live-server"
+    "run": "live-server"
   },
   "repository": {
     "type": "git",
