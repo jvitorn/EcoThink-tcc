@@ -10,6 +10,8 @@ const app = express();
 const server = require('http').createServer(app);
 //capturando usuarios
 const users = [];
+//capturanndo rotas
+const routes = require('./src/routes');
 //definindo os arquivos da aplicação
 app.use(express.static(path.join(__dirname,'src/public')));
 //definindo onde estara as views
@@ -20,42 +22,8 @@ app.engine('html',require('ejs').renderFile);
 app.set('view engine','html');
 //encode
 app.use(express.urlencoded());
-
-
-//-----------------------------------------------------------------------------------------------------------------------------------------------
-//quando entrar na rota padrao sera iniciado o 'index.html'
-app.get('/',(req,res)=>{
-    res.render('index.html');
-});
-//quando entrar na rota padrao sera iniciado o 'cadastro.html'
-app.get('/cadastro',(req,res)=>{
-    res.render('cadastro.html');
-});
-app.get('/login',(req,res)=>{
-    res.render('login.html');
-});
-app.get('/perfil',(req,res)=>{
-    res.render('perfil.html');
-});
-app.get('/home',(req,res)=>{
-    res.render('home.html');
-});
-app.post('/registrar',(req,res)=>{
-    let email = req.body.email;
-    let senha = req.body.password;
-    let confirm = req.body.confirm;
-   console.log(req.body);
-});
-app.post('/entrar',(req,res)=>{
-    let email = req.body.email;
-    let senha = req.body.password;
-    if(email == "joao.carvalho@gmail.com" && senha == "123"){
-        res.render("perfil.html");
-    }else{
-        res.render("login.html");
-    }
-
-});
+//chamando rotas
+app.use(routes);
 //Servidor 
 app.listen(port,function(){
     console.log('Server is running at http://localhost:'+ port);
