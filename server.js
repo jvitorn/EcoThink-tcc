@@ -22,8 +22,10 @@ app.engine('html',require('ejs').renderFile);
 app.set('view engine','html');
 //encode
 app.use(express.urlencoded());
+app.use(express.json())
 //chamando rotas
 app.use(routes);
+//app.use(routesBack);
 //Servidor 
 app.listen(port,function(){
     console.log('Server is running at http://localhost:'+ port);

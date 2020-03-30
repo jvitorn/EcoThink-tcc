@@ -8,7 +8,6 @@ exports.up = function(knex) {
     table.string('cidade').notNullable();
     table.string('uf').notNullable();
     table.string('logradouro').notNullable();
-    table.string('rua').notNullable();
     table.integer('numero').notNullable();
 
   });
