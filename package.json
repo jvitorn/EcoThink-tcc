@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon server.js",
-    "run":"live-server"
+    "run": "live-server"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
   "dependencies": {
     "ejs": "^3.0.1",
     "express": "^4.17.1",
+    "knex": "^0.20.13",
     "live-server": "^1.2.1",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "sqlite3": "^4.1.1"
   }
 }
