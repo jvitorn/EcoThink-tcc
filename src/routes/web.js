@@ -1,6 +1,7 @@
 const express = require('express');
 const EnderecoController = require('../controllers/EnderecoController');
 const UsuarioController = require('../controllers/UsuarioController');
+const EventoController = require('../controllers/EventoController');
 const routes = express.Router();
 //criar um novo endereco
 routes.post('/endereco',EnderecoController.create);
@@ -10,6 +11,10 @@ routes.get('/endereco',EnderecoController.index);
 routes.post('/usuario',UsuarioController.create);
 //listar um novo endereco 
 routes.get('/usuario',UsuarioController.index);
+//criar um novo endereco
+routes.post('/evento',EventoController.create);
+//listar um novo endereco 
+routes.get('/evento',EventoController.index);
 //-----------------------------------------------------------------------------------------------------------------------------------------------
 //quando entrar na rota padrao sera iniciado o 'index.html'
 routes.get('/',(req,res)=>{

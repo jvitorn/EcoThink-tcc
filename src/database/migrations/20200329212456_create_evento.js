@@ -4,7 +4,7 @@ exports.up = function(knex) {
     //criação de uma coluna com autoincremento que tenha um id
     table.increments();
     table.string('nome_evento').notNullable();
-    table.date('data').notNullable();
+    table.datetime('data').notNullable();
     table.string('tipo').notNullable();
     table.string('descricao').notNullable();
     table.string('organizador').notNullable();
