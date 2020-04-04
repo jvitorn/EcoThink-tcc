@@ -11,7 +11,7 @@ angular.module('ecothink',['ngRoute','ngAnimate'])
         });
         $routeProvider.when('/cadastro',{
             templateUrl:'partials/cadastro.html',
-            controller:'IndexController'
+            controller:'CadastroController'
         });
         $routeProvider.when('/perfil',{
             templateUrl:'partials/perfil.html',
