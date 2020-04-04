@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="ecothink">
+<head>
+    <base href="/">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bem Vindo ao EcoThink</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/perfil.css">
+     <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3732f07a5a.js" crossorigin="anonymous"></script>
+    <!-- angular / modules -->
+	<script src="js/lib/angular.min.js"></script>
+    <script src="js/lib/angular-animate.min.js"></script>
+    <script src="js/lib/angular-route.min.js"></script>
+	<script src="js/main.js"></script>
+	<!-- controllers -->
+	<script src="js/controllers/index-controller.js"></script>
+    
+    <!-- cdn animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+    .arredondar{
+        border-radius: 1rem !important;
+    }
+    .display-4{
+        font-weight: 325;
+    }
+    </style>
+</head>
+<body class="bg-success">
+    <div class="container"> 
+            <!-- aqui sera carregado a pagina  -->
+      <ng-view></ng-view>
+    </div>
+</body>
+</html>
