@@ -1,4 +1,4 @@
-
+    
         <div class="row text-white">
             <!-- conteudo do cadastro -->
             <div class="col-sm-8 mx-auto cadastro p-4">
@@ -20,35 +20,41 @@
                 <!-- formularios -->
                 <div class="row bounceIn delay-1s slow">
                     <div class="col-12 col-sm-12 p-4 mt-2 text-dark shadow bg-white arredondar">
-                        <form action="/registrar" method="post" name="cadastro">
+                        <form novalidate name="formulario" ng-submit="submeter()">
                         <!-- form -->
-                        <div class="row">
-                            <div class="col-12 form-cadastro">
-                                <div class="form-group">
-                                    <label>Nome</label>
-                                    <input type="text" name="nome"  class="form-control form-control-md border-success"  placeholder="Digite seu nome">
-                                </div>
-                                <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="text" name="email" ng-model="inputEmail" class="form-control form-control-md border-success"  placeholder="Digite seu email">
-                                </div>
-                                <div class="form-group">
-                                    <label>Senha</label>
-                                    <input type="password" name="password" class="form-control form-control-md border-success"  placeholder="Digite sua senha">
-                                </div>
-                                <div class="form-group">
-                                    <label>Senha</label>
-                                    <input type="password" name="confirm" class="form-control form-control-md border-success"  placeholder="Digite sua senha novamente">
-                                    <a href="/" class="text-success">Voltar ao inicio</a>
+                        <!-- mensagem -->
+                        <p ng-show="mensagem.length" class="alert alert-info">{{mensagem}}</p>
+                            <div class="row">
+                                <div class="col-12 form-cadastro">
+                                    <div class="form-group">
+                                        <label>Nome</label>
+                                        <input type="text" name="nome" ng-model="usuario.nome"  class="form-control form-control-md border-success"  placeholder="Digite seu nome" required>
+                                        <span class="alert-danger" ng-show="formulario.nome.$error.required"> Necessario Preenchimento ! </span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Email</label>
+                                        <input type="text" name="email" ng-model="usuario.email" ng-pattern="/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/" class="form-control form-control-md border-success"  placeholder="Digite seu email" required>
+                                        <span class="alert-danger" ng-show="formulario.email.$error.required"> Necessario Preenchimento ! </span>
+                                        <span class="alert-danger" ng-show="formulario.email.$dirty&&formulario.email.$error.pattern">Entre com um email valido</span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Senha</label>
+                                        <input type="password" name="senha" ng-model="usuario.senha" class="form-control form-control-md border-success"  placeholder="Digite sua senha" required>
+                                        <span class="alert-danger" ng-show="formulario.email.$error.required"> Necessario Preenchimento ! </span>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Senha</label>
+                                        <input type="password" name="confirm" class="form-control form-control-md border-success"  placeholder="Digite sua senha novamente" >
+                                        <a href="/" class="text-success">Voltar ao inicio</a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <!-- buttom -->
-                        <div class="row">
-                            <div class="col-12 botao-cadastro ">
-                            <input class="btn btn-block mx-auto shadow bg-info p-3 mt-3 mb-4 border-rounded text-white" type="submit" value="Cadastrar"></>
+                            <!-- buttom -->
+                            <div class="row">
+                                <div class="col-12 botao-cadastro ">
+                                <button class="btn btn-block mx-auto shadow bg-info p-3 mt-3 mb-4 border-rounded text-white" type="submit" ng-disabled="formulario.$invalid">Cadastrar</button>
+                                </div>
                             </div>
-                        </div>
                         </form>
                         <!-- Login With -->
                         <div class="row">
@@ -73,3 +79,4 @@
                 </div>
             </div>
         </div>
+        

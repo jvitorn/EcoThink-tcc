@@ -20,7 +20,11 @@ angular.module('ecothink',['ngRoute','ngAnimate'])
         $routeProvider.when('/login',{
             templateUrl:'partials/login.html',
             controller:'IndexController'
-        })
+        });
+        $routeProvider.when('/calendario',{
+            templateUrl:'partials/calendario.html',
+            controller:'IndexController'
+        });
         //obrigando o usuario a ser redirecionado para '/'
         $routeProvider.otherwise({redirectTo: '/'});
 });

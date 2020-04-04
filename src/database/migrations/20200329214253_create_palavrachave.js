@@ -5,6 +5,8 @@ exports.up = function(knex) {
      table.increments();
      //criando um relacionamento com a table 'ongs'
      table.string('usuario_id').notNullable();
+     //criando nome da palavra chave 
+     table.string('nomepalavra').notNullable();
      //criando um relacionamento com a table 'ongs'
      table.integer('evento_id').notNullable();
      //chamando chave estrangeira
