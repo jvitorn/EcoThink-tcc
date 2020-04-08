@@ -1,36 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>EcoThink</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/estilo.css">
-    <link rel="stylesheet" href="css/home.css">
-     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/3732f07a5a.js" crossorigin="anonymous"></script>
-    <!-- cdn angular -->
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>  
-    <script src="js/angular.js"></script>
-</head>
-<body>
-    <div class="container">
+
         <!-- Eventos Principais -->
-        <div class="row">
-            <div class="col-12 p-4">
+        <div class="row p-3">
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h5 class="h5">Eventos Principais</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 p-2">
                 <div class="row">
                     <div class="col-6">
-                        <div class="card eventos-principais text-center">
-                            <div class="card-body">
-                              <h5 class="card-title">Eventos Principais</h5>
+                        <div class="eventos-principais bd-highligh">
+                            <div class="text-center">
+                                <h3 class="h3">Eventos Principais</h3>
                             </div>
                         </div>
                     </div>
                     <div class="col-6">
-                        <div class="card eventos-principais text-center ">
-                            <div class="card-body">
-                              <h5 class="card-title">Eventos Principais</h5>
+                        <div class="eventos-principais bd-highligh">
+                            <div class="text-center">
+                                <h3 class="h3">Eventos Principais</h3>
                             </div>
                         </div>
                     </div>
@@ -38,19 +28,59 @@
             </div>
         </div>
         <!-- Horario Evento -->
-        <div class="row">
-            <div class="col-12 p-3 border rounded">
+        <div class="row p-3">
+            <div class="col-12 border rounded bg-dark">
                 <div class="row">
-                    <div class="col-12 ">
-                        <div class="text-group">
+                    <div class="col-12 p-3">
+                        <div class="text-group text-white">
                             <div class="text-center">
                                 <p class="lead">Proximo Evento Em:</p>
-                                <h6 class="display-4">20:34</h6>
+                                <h6 class="display-4">{{ today | date:'mediumTime'}}</h6>
                             </div>
                         </div>
                     </div>
                 </div>
             </div> 
+        </div>
+        <!-- Proximos Eventos -->
+        <div class="row p-3 mb-5">
+            <!-- Legenda -->
+            <div class="col-12 mb-2">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h5 class="h5">Proximos Eventos</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Conteudo -->
+            <div class="col-12 border rounded evento-calendario">
+                <div class="row">
+                    <div class="col-8 evento-nome text-truncate">
+                        <h5 class="font-weight-bold">Nome do evento.</h5>
+                        <span class="font-weight-normal conteudo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel ratione, sunt nesciunt possimus, modi nam corrupti assumenda earum molestiae culpa fuga, ab quam provident repudiandae. A nulla ipsam at totam. </span>    
+                        <p class="lead">Itanhaem ,SP,Parquinho <i class="fas fa-map-marker-alt"></i></p>
+                    </div>
+                    <div class="col-3 evento-data">
+                        <span class="evento-data-dia display-5">09</span>
+                        <span class="evento-data-mes display-5">Dez</span>
+                        <span class="evento-data-ano display-5">2020</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 border rounded evento-calendario">
+                <div class="row">
+                    <div class="col-9 evento-nome text-truncate">
+                        <h5 class="font-weight-bold">Nome do evento.</h5>
+                        <span class="font-weight-normal conteudo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel ratione, sunt nesciunt possimus, modi nam corrupti assumenda earum molestiae culpa fuga, ab quam provident repudiandae. A nulla ipsam at totam. </span>    
+                        <p class="lead">Itanhaem ,SP,Parquinho <i class="fas fa-map-marker-alt"></i></p>
+                    </div>
+                    <div class="col-3 evento-data">
+                        <span class="evento-data-dia display-5">09</span>
+                        <span class="evento-data-mes display-5">Dez</span>
+                        <span class="evento-data-ano display-5">2020</span>
+                    </div>
+                </div>
+            </div>
         </div>
          <!-- chat footer -->
          <div class="row">
@@ -72,5 +102,3 @@
             </div>
         </div>
     </div>
-</body>
-</html>

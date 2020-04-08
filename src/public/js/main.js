@@ -12,6 +12,7 @@ angular.module('ecothink',['ngRoute','ngAnimate'])
         $routeProvider.when('/cadastro',{
             templateUrl:'partials/cadastro.html',
             controller:'CadastroController'
+
         });
         $routeProvider.when('/perfil',{
             templateUrl:'partials/perfil.html',
@@ -23,8 +24,8 @@ angular.module('ecothink',['ngRoute','ngAnimate'])
         });
         $routeProvider.when('/calendario',{
             templateUrl:'partials/calendario.html',
-            controller:'IndexController'
-        });
+            controller:'CalendarioController'
+        })
         //obrigando o usuario a ser redirecionado para '/'
         $routeProvider.otherwise({redirectTo: '/'});
 });
